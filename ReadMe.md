@@ -28,8 +28,3 @@ Una volta raccolti i valori, si procede con la logica condizionale:
 
 ### 4. Arrotondamento e stampa del risultato
 Dopo aver applicato lo sconto, utilizzo il metodo `.toFixed(2)` per arrotondare il valore a due decimali. Questo permette di avere una visualizzazione chiara e corretta del prezzo finale, che viene poi stampato a schermo.
-
----
-
-Grazie a questa struttura, il programma permette di calcolare il costo del biglietto del treno in modo semplice ed efficace.
-

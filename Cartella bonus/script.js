@@ -4,6 +4,7 @@
 let Number_Indicator_KM = 0;
 let Age_Users = 0;
 const Price_KM_Standard = 0.21;
+const text_price = document.getElementById('price-txt');
 
 //Interazione di Finestra verso L'utente per lo stampo dei relativi valori
 
@@ -20,19 +21,19 @@ if (Number(Window_Prompt_message_2) < 18) {
     Calc_km_Total = Number(Window_Prompt_message_1) * Price_KM_Standard;
     // Calcolo della percentuale del 20%
     Message_Prompt_Final = (Calc_km_Total * 20) / 100;
-    Number_Price = 'Il tuo importo è di:' + '€' + Message_Prompt_Final.toFixed(2);
+    Number_Price = '€' + Message_Prompt_Final.toFixed(2);
 } 
 //Condizione Applicata agli adulti
 else if(Number(Window_Prompt_message_2) <= 60){
     Calc_km_Total = Number(Window_Prompt_message_1) * Price_KM_Standard;
     // Calcolo della percentuale del 40%
     Message_Prompt_Final = (Calc_km_Total * 40) / 100;
-    Number_Price = 'Il tuo importo è di:' + '€' + Message_Prompt_Final.toFixed(2);
+    Number_Price = '€' + Message_Prompt_Final.toFixed(2);
 } 
 //Applicazione applicata In caso di valore nullo
 else{
-    Number_Price = 'Il tuo importo è di:' + '€' + 0;
+    Number_Price = '€' + 0;
 }
 
 //Stampo dell'importo calcolato dalla condizione in variabile
-console.log(Number_Price);
+text_price.textContent = Number_Price;

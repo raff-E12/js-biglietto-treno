@@ -40,7 +40,7 @@ if (!isNaN(Number(window_message_Km)) && !isNaN(Number(window_message_Age))) {
    }
 } else{
    window.confirm('Hai inserito una parola, invece di un numero, mi raccomando riprova a rifare il passaggio');
-   location.reload();
+   location.reload(); // Ricarcare della pagina in caso di condizione falsa
 }
 
 //Stampo dell'importo calcolato dalla condizione in variabile
